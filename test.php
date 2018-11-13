@@ -428,26 +428,32 @@
           <div class="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form action="form-to-email.php" method="post" class="contactForm">
+            <form action="form-to-email.php" method="post" class="contact-form">
+
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
                 <div class="validation"></div>
               </div>
+
               <div class="form-group">
-                <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" />
                 <div class="validation"></div>
               </div>
-             <!--- <div class="form-group">
+
+             <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validation"></div>
               </div>
-              ---->
+
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
 
-              <div class="text-center"><input type="submit">Send Message</button></div>
+              <div class="text-center"
+                <button type="submit" name="submit">Send Message</button>
+              </div>
+
             </form>
           </div>
         </div>
